@@ -5,7 +5,11 @@ export const FirstRunPage = 'TutorialPage';
 // Change this if not using tabs
 export const MainPage = 'TabsPage';
 
+export const OtpPage = 'VerifyPage';
+export const KarIdPage = 'KarIdPage';
+
 // The initial root pages for our tabs (remove if not using tabs)
-export const Tab1Root = 'ListMasterPage';
+export const Tab1Root = 'PatientHomePage';
 export const Tab2Root = 'SearchPage';
 export const Tab3Root = 'SettingsPage';
+export const Tab4Root = 'ListMasterPage';

@@ -32,18 +32,18 @@ export class TutorialPage {
         console.log('Loaded values', values);
         this.slides = [
           {
-            title: values.TUTORIAL_SLIDE1_TITLE,
-            description: values.TUTORIAL_SLIDE1_DESCRIPTION,
+            title: 'First Slide',
+            description: 'First Slider right?',
             image: 'assets/img/ica-slidebox-img-1.png',
           },
           {
-            title: values.TUTORIAL_SLIDE2_TITLE,
-            description: values.TUTORIAL_SLIDE2_DESCRIPTION,
+            title: 'Slide 2',
+            description: 'This is Slide 2',
             image: 'assets/img/ica-slidebox-img-2.png',
           },
           {
-            title: values.TUTORIAL_SLIDE3_TITLE,
-            description: values.TUTORIAL_SLIDE3_DESCRIPTION,
+            title: 'Slide 3',
+            description: 'This is Slide 3',
             image: 'assets/img/ica-slidebox-img-3.png',
           }
         ];
@@ -51,7 +51,7 @@ export class TutorialPage {
   }
 
   startApp() {
-    this.navCtrl.setRoot('WelcomePage', {}, {
+    this.navCtrl.setRoot('LoginPage', {}, {
       animate: true,
       direction: 'forward'
     });

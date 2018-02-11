@@ -1,0 +1,41 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Patient ID</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content>
+
+  <img src = "../assets/img/nhm.png" width = "30%" height = "30%">
+  <br>
+
+    <img src = "../assets/img/QR.png" width = "30%" height = "30%">
+
+  <form (submit)="doVerifyPatient()">
+    <ion-list>
+
+      <ion-item>
+        <ion-label fixed>KAR-ID</ion-label>
+        <ion-input type="string" name="karid"></ion-input>
+      </ion-item>
+
+      <!--
+      Want to use a Username instead of an Email? Here you go:
+
+      <ion-item>
+        <ion-label floating>{{ 'USERNAME' | translate }}</ion-label>
+        <ion-input type="text" [(ngModel)]="account.username" name="username"></ion-input>
+      </ion-item>
+      -->
+
+
+      <div padding>
+        <button ion-button color="primary" block>Check Patient</button>
+      </div>
+
+    </ion-list>
+  </form>
+</ion-content>

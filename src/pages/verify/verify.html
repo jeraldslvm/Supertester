@@ -9,14 +9,14 @@
 
 <ion-content>
 
-  <img src = "../assets/img/nhm.png" width = "20%" height = "20%">
+  <img src = "../assets/img/nhm.png" width = "30%" height = "30%">
 
-  <form (submit)="doLogin()">
+  <form (submit)="doVerify()">
     <ion-list>
 
       <ion-item>
-        <ion-label fixed>{{ 'EMAIL' | translate }}</ion-label>
-        <ion-input type="email" [(ngModel)]="account.email" name="email"></ion-input>
+        <ion-label fixed>OTP CODE</ion-label>
+        <ion-input type="string"  name="otpcode"></ion-input>
       </ion-item>
 
       <!--
@@ -28,15 +28,13 @@
       </ion-item>
       -->
 
-      <ion-item>
-        <ion-label fixed>{{ 'PASSWORD' | translate }}</ion-label>
-        <ion-input type="password" [(ngModel)]="account.password" name="password"></ion-input>
-      </ion-item>
-
       <div padding>
-        <button ion-button color="primary" block>Send OTP</button>
+        <button ion-button color="primary" block>Verify</button>
       </div>
 
     </ion-list>
   </form>
+  <div padding>
+    <button ion-button color="primary" block (click)="back()">Resend OTP</button>
+  </div>
 </ion-content>
